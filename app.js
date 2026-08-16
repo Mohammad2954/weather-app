@@ -12,21 +12,19 @@ const windDegreText=document.querySelector(".wind-degre--text")
 const UVText=document.querySelector(".UV-text")
 
 const searchFunc= async()=>{
-    let city=inputElem.value
+    try{
+        let city=inputElem.value
 
     const dataWeather =await getdataInformation(city)
     showData(dataWeather)
+    }catch{
+        noutFound()
+    }
 }
 const getdataInformation=async(city)=>{
     const data=await fetch(`https://wttr.in/${encodeURIComponent(city)}?format=j1&lang=fa`)
     const result=await data.json()
-    if(data.status==200){
-  
-        return result
-    }else{
-  
-        noutFound()
-    }
+    return result
     
 }
 const showData=(dataWeather)=>{

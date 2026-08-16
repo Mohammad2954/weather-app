@@ -5,4 +5,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     color: #E3F2FD;
+    
+}
+span::selection{
+    background: #90CAF9;
+}
+h1::selection{
+    background: #90CAF9;
+}
+p::selection{
+    background: #90CAF9;
 }

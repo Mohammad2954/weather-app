@@ -13,6 +13,7 @@ const UVText=document.querySelector(".UV-text")
 
 const searchFunc= async()=>{
     try{
+        mainInfo.innerHTML="در حال جستجو برای شهر مورد نظر"
         let city=inputElem.value
 
     const dataWeather =await getdataInformation(city)

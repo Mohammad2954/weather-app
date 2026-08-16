@@ -1,0 +1,8 @@
+body{
+    background-image: url(../img/stacked-waves-haikei.svg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #E3F2FD;
+}
